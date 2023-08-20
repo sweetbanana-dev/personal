@@ -4,7 +4,7 @@ import Typed from "react-typed";
 import { headerData } from "../../../data/headerData";
 import "./landing.css";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { contactsData } from "../../../data/contactsData";
 
 function LandingUI({ theme, drawerOpen, classes }) {
@@ -22,15 +22,6 @@ function LandingUI({ theme, drawerOpen, classes }) {
                   className="landing--social linkedin-icon"
                   style={{ color: theme.primary }}
                   aria-label="LinkedIn"
-                />
-              </a>
-            )}
-            {contactsData.github && (
-              <a href={contactsData.github} target="_blank" rel="noreferrer">
-                <FaGithub
-                  className="landing--social"
-                  style={{ color: theme.primary }}
-                  aria-label="GitHub"
                 />
               </a>
             )}

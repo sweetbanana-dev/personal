@@ -2,7 +2,6 @@ import { Drawer } from "@mui/material";
 import React from "react";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
-import { HiDocumentText } from "react-icons/hi";
 import { IoClose, IoHomeSharp, IoMenuSharp } from "react-icons/io5";
 import { MdPhone } from "react-icons/md";
 import Fade from "react-reveal/Fade";
@@ -79,15 +78,6 @@ function NavbarUI({
                 <div className={classes.drawerItem}>
                   <FaUser className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>About</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Resume</span>
                 </div>
               </NavLink>
             </Fade>
