@@ -5,6 +5,5 @@ export const educationData = [
     course: "Bachelor Degree",
     startYear: "2011",
     endYear: "2015",
-    GPA: "GPA: 3.75",
   },
 ];
