@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { FaLinkedinIn } from "react-icons/fa";
 import { FiAtSign, FiPhone } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { ThemeContext } from "../../../contexts/theme-context";
@@ -39,19 +38,6 @@ const ContactUI = ({ classes }) => {
                 <HiOutlineLocationMarker />
               </div>
               <p style={{ color: theme.tertiary }}>{contactsData.address}</p>
-            </div>
-
-            <div className="socialmedia-icons">
-              {contactsData.linkedIn && (
-                <a
-                  href={contactsData.linkedIn}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaLinkedinIn aria-label="LinkedIn" />
-                </a>
-              )}
             </div>
           </div>
         </div>
